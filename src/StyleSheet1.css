@@ -1,16 +1,9 @@
-﻿content {
-    position:center;
-    text-align:center;
-    text-size-adjust: initial 150%;
-}
-.footer{
-    position: fixed; bottom: 5px;
-}
-body {
+﻿body {
     margin: 0;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    
 }
 
 table {
@@ -24,4 +17,37 @@ th, td {
     border: 1px solid #333;
     padding: 10px;
     text-align: center;
+}
+.Button {
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+h1 {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 5em;
+}
+h2 {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+.anonymous-pro-regular {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
 }

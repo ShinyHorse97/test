@@ -71,6 +71,7 @@
     <Content Include="App_Data\Database_log.ldf">
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
+    <Content Include="Images\BackgroundImages\Image_Welcome.png" />
     <Content Include="Images\Images.Captcha\Captcha_0.jpg" />
     <Content Include="Images\Images.Captcha\Captcha_1.jpg" />
     <Content Include="Images\Images.Captcha\Captcha_2.jpg" />
@@ -128,6 +129,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
