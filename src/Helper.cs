@@ -20,7 +20,7 @@ namespace JonatanShlain_Final.Proj
     {
         public static SqlConnection ConnectToDb()
         {
-            string connString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\VS\\src\\App_Data\\RaceDB.mdf;Integrated Security=True";
+            string connString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\YehonatanShlain2025\\test-main\\test-main\\src\\App_Data\\Users_DB.mdf;Integrated Security=True";
             SqlConnection conn = new SqlConnection(connString);
             return conn;
         }

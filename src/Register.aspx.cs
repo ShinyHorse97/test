@@ -15,7 +15,7 @@ namespace JonatanShlain_Final.Proj
         {
             if (!IsPostBack)
             {
-                msg = "Welcome to the registration page! Please fill out the form below to create a new account.";
+                msg = "Welcome to the registration page!<br /> Please fill out the form below to create a new account.";
             }
             else if (Request.Form["new_username"] == null || Request.Form["new_password"] == null || Request.Form["Fullname"] == null)
             {
@@ -48,7 +48,7 @@ namespace JonatanShlain_Final.Proj
                 else
                 {
                     msg = "User Added";
-                    query = $"INSERT INTO Users (UserName, UserPassword, UserFName, UserRole) VALUES ('{inputRegisterUserName}', '{inputRegisterUserPassword}', '{inputRegusterUserFirstName}', '1')";
+                    query = $"INSERT INTO Users (UserName, UserPassword, UserFName) VALUES ('{inputRegisterUserName}', '{inputRegisterUserPassword}', '{inputRegusterUserFirstName}')";
                     Helper.DoQuery(query);
                     Response.Redirect("Login.aspx");
                 }

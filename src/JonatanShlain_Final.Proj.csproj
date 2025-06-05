@@ -67,9 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\RaceDB.mdf" />
-    <Content Include="App_Data\RaceDB_log.ldf">
-      <DependentUpon>RaceDB.mdf</DependentUpon>
+    <Content Include="App_Data\Users_DB.mdf" />
+    <Content Include="App_Data\Users_DB_log.ldf">
+      <DependentUpon>Users_DB.mdf</DependentUpon>
     </Content>
     <Content Include="bootstrap.min.css" />
     <Content Include="Fanatec.aspx" />
