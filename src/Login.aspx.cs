@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,33 +10,35 @@ namespace JonatanShlain_Final.Proj
 {
     public partial class Loginth : System.Web.UI.Page
     {
-        public string username = "7dm";
         public string msg;
-        public string password = "12345";
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack)
             {
-                if (Request.Form["username"] == username && Request.Form["password"] == password && Request.Form["captcha"] == Session["captcha"].ToString())
+                if (Request.Form["captcha"].ToString() != Session["captcha"].ToString())
                 {
-                    Session["IsLogin"] = "true";
-                    Response.Redirect("Welcome.aspx");
-                    msg = "";
-                }
-                else if (Request.Form["username"] == username && Request.Form["captcha"] == Session["captcha"].ToString())
-                {
-                    msg = "wrong password";
-                }
-                else if (Request.Form["password"] == password && Request.Form["captcha"] == Session["captcha"].ToString())
-                {
-                    msg = "wrong username";
-                }
-                else if (Request.Form["username"] == username && Request.Form["password"] == password)
-                {
-                    CreateRandomNumber();
                     msg = "wrong captcha";
                 }
-                else { msg = "neither password nor username are right"; }
+                else
+                {
+                    string inputUserName = Request.Form["username"].ToString();
+                    string inputUserPassword = Request.Form["password"].ToString();
+                    string query = $"SELECT * FROM Users WHERE UserName = '{inputUserName}' AND UserPassword = '{inputUserPassword}'";
+                    DataTable dt = Helper.ExecuteDataTable(query);
+                    int len = dt.Rows.Count;
+                    if (len > 0)
+                    {
+                        Session["isLogin"] = "true";
+                        Session["userName"] = dt.Rows[0]["UserName"].ToString();
+                        Response.Redirect("Main.aspx");
+                    }
+                    else
+                    {
+                        msg = "Oops try again";
+                    }
+
+                }
             }
             else
             {
