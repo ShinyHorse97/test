@@ -19,7 +19,7 @@ namespace JonatanShlain_Final.Proj
             }
             else if (Request.Form["new_username"] == null || Request.Form["new_password"] == null || Request.Form["Fullname"] == null)
             {
-                msg = "Please fill in all fields.";
+                msg = "<div>Please fill in all fields.<div>";
             }
             else if (Request.Form["new_password"]!= Request.Form["confirm_password"])
             {
@@ -50,7 +50,6 @@ namespace JonatanShlain_Final.Proj
                     msg = "User Added";
                     query = $"INSERT INTO Users (UserName, UserPassword, UserFName) VALUES ('{inputRegisterUserName}', '{inputRegisterUserPassword}', '{inputRegusterUserFirstName}')";
                     Helper.DoQuery(query);
-                    Response.Redirect("Login.aspx");
                 }
             }
         }

@@ -11,7 +11,10 @@ namespace JonatanShlain_Final.Proj
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if ((bool)Session["isLogin"] == false)
+            {
+                Response.Redirect("Login.aspx");
+            }
         }
     }
 }
