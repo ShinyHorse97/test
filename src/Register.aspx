@@ -16,19 +16,19 @@
         <%=msg%>
         <div class="form-group">
             <label for="Fullname" class="form-label">Full Name:</label>
-            <input type="text" name="Fullname" />
+            <input type="text" name="Fullname" required="required"/>
         </div>
         <div class="form-group">
             <label for="new_username" class="form-label">Username:</label>
-            <input type="text" name="new_username" />
+            <input type="text" name="new_username" required="required"/>
         </div>
         <div class="form-group">
             <label for="new_password" class="form-label">Password:</label>
-            <input type="password" name="new_password" />
+            <input type="password" name="new_password" required="required"/>
         </div>
         <div class="form-group">
             <label for="confirm_password" class="form-label">CONFIRM PASSWORD:</label>
-            <input type="password" name="confirm_password" />
+            <input type="password" name="confirm_password" required="required"/>
         </div>
         <div class="form-group">
             <input type="submit" value="Register" class="btn btn-primary" />

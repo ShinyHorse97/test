@@ -12,18 +12,18 @@
 </head>
 <body class="d-flex flex-column min-vh-100 font-monospace fs-1 bg-black text-light">
     <form id="form1" runat="server" class="flex-grow-1 d-flex flex-column">
-        <header class="bg-dark text-white py-3 mb-4">
+        <header class="bg-dark text-white py-3 mb-4" style="margin-top: 90px;">
             <div class="container text-center">
                 <h1 class="mb-0 " style="font-family: 'Anonymous Pro', monospace;">SimSpeed</h1>
                 <small>The Ultimate Racing Simulation Experience</small>
             </div>
         </header>
-        <nav class="navbar navbar-expand-xxl navbar-dark bg-primary mb-4">
+        <nav class="navbar navbar-expand-xxl navbar-dark bg-primary fixed-top";">
             <div class="container">
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <ul class="navbar-nav mb-3 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="Main.aspx">Home</a>
+                            <a class="nav-link" href="/Main.aspx">Home</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav me-auto mb-3 mb-lg-0">
@@ -31,10 +31,27 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarHardware" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Hardware</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="Fanatec.aspx">Fanatec</a></li>
+                                <li><a class="dropdown-item" href="/Hardware_Info/Fanatec.aspx">Fanatec</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
+                                <li><a class="dropdown-item" href="/Hardware_Info/Moza.aspx">Moza</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="Simcube.aspx">Simcube</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="Simagic.aspx">Simagic</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="NextLevelRacing.aspx">Next Level Racing</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="Logitech.aspx">Logitech</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown ms-5">
@@ -45,6 +62,23 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
+                                <li><a class="dropdown-item" href="AssettoCorsa.aspx">Assetto Corsa / Competizione / Evo</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="LMU.aspx">Le Mans Ultimate</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="GT.aspx">Gran Turismo</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="BeamNG.aspx">BeamNG</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="F1.aspx">F1</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown ms-5">

@@ -17,10 +17,6 @@ namespace JonatanShlain_Final.Proj
             {
                 msg = "Welcome to the registration page!<br /> Please fill out the form below to create a new account.";
             }
-            else if (Request.Form["new_username"] == null || Request.Form["new_password"] == null || Request.Form["Fullname"] == null)
-            {
-                msg = "<div>Please fill in all fields.<div>";
-            }
             else if (Request.Form["new_password"]!= Request.Form["confirm_password"])
             {
                 msg = "Passwords do not match. Please try again.";

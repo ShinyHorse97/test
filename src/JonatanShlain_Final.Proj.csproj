@@ -72,9 +72,19 @@
       <DependentUpon>Users_DB.mdf</DependentUpon>
     </Content>
     <Content Include="bootstrap.min.css" />
-    <Content Include="Fanatec.aspx" />
-    <Content Include="Images\BackgroundImages\Background_racetrack.jpg" />
+    <Content Include="Hardware_Info\Fanatec.aspx" />
+    <Content Include="Hardware_Info\Moza.aspx" />
+    <Content Include="Hardware_Info\Simagic.aspx" />
+    <Content Include="Hardware_Info\Simcube.aspx" />
+    <Content Include="Images\BackgroundImages\bmwfanatec-bg.jpg" />
+    <Content Include="Images\BackgroundImages\Fanatec_bg.jpg" />
+    <Content Include="Images\BackgroundImages\Fanatec_prod-bg.jpeg" />
     <Content Include="Images\BackgroundImages\Image_Welcome.png" />
+    <Content Include="Images\BackgroundImages\MaxSimracing-bg.jpg" />
+    <Content Include="Images\BackgroundImages\Moza-prod-bg.jpg" />
+    <Content Include="Images\BackgroundImages\moza-racing-bg.jpg" />
+    <Content Include="Images\BackgroundImages\Simcube-bg.png" />
+    <Content Include="Images\BackgroundImages\Simcube-prod-bg.jpg" />
     <Content Include="Images\Images.Captcha\Captcha_0.jpg" />
     <Content Include="Images\Images.Captcha\Captcha_1.jpg" />
     <Content Include="Images\Images.Captcha\Captcha_2.jpg" />
@@ -94,12 +104,33 @@
     <Content Include="Welcome.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fanatec.aspx.cs">
+    <Compile Include="Hardware_Info\Fanatec.aspx.cs">
       <DependentUpon>Fanatec.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Fanatec.aspx.designer.cs">
+    <Compile Include="Hardware_Info\Fanatec.aspx.designer.cs">
       <DependentUpon>Fanatec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hardware_Info\Moza.aspx.cs">
+      <DependentUpon>Moza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hardware_Info\Moza.aspx.designer.cs">
+      <DependentUpon>Moza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hardware_Info\Simagic.aspx.cs">
+      <DependentUpon>Simagic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hardware_Info\Simagic.aspx.designer.cs">
+      <DependentUpon>Simagic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hardware_Info\Simcube.aspx.cs">
+      <DependentUpon>Simcube.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hardware_Info\Simcube.aspx.designer.cs">
+      <DependentUpon>Simcube.aspx</DependentUpon>
     </Compile>
     <Compile Include="Helper.cs" />
     <Compile Include="Login.aspx.cs">
