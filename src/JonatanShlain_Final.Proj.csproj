@@ -109,6 +109,7 @@
     <Content Include="Main.aspx" />
     <Content Include="Misha.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="SimracingStewards.aspx" />
     <Content Include="Software_Info\AssettoCorsa.aspx" />
     <Content Include="Software_Info\GT.aspx" />
     <Content Include="Software_Info\Iracing.aspx" />
@@ -205,6 +206,14 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SimracingStewards.aspx.cs">
+      <DependentUpon>SimracingStewards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SimracingStewards.aspx.designer.cs">
+      <DependentUpon>SimracingStewards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SimracingStewards.cs" />
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

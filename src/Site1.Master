@@ -89,14 +89,19 @@
                             </ul>
                         </li>
                     </ul>
+                    <ul class="navbar-nav ms-5 mb-3 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/SimracingStewards.aspx">SRS</a>
+                        </li>
+                    </ul>
                     <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarAccount" role="button"
                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="/Images/Simspeed_Logo.png" alt="User" class="me-2 mx-5" style="width:80px; height:80px; object-fit:cover;">
+                                <img src="/Images/Simspeed_Logo.png" alt="User" class="me-2 mx-5" style="width:70px; height:70px; object-fit:cover;">
                                 <span>Account</span>
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end text-center" aria-labelledby="navbarAccount">
+                            <ul class="dropdown-menu dropdown-menu-end text-center m-5" aria-labelledby="navbarAccount">
                                 <li><a class="dropdown-item" >Hello <%=Session["FullName"] %> <br /> Welcome to SimSpeed!</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item">User: <%=Session["Username"] %></a></li>
