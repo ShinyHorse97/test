@@ -31,6 +31,7 @@ namespace JonatanShlain_Final.Proj
                     {
                         Session["isLogin"] = "true";
                         Session["userName"] = dt.Rows[0]["UserName"].ToString();
+                        Session["FullName"] = dt.Rows[0]["UserFName"].ToString();
                         Response.Redirect("Main.aspx");
                     }
                     else

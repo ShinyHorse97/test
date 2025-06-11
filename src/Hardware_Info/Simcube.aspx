@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Simcube.aspx.cs" Inherits="JonatanShlain_Final.Proj.Hardware_Info.Simcube" %>
-
+<asp:Content ID="TitleContent" ContentPlaceHolderID="TitleContent" runat="server">
+    Simcube - SimSpeed
+</asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

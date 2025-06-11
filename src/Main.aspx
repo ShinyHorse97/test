@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="JonatanShlain_Final.Proj.Main" %>
-
+<asp:Content ID="TitleContent" ContentPlaceHolderID="TitleContent" runat="server">
+    SimSpeed - Home
+</asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -18,7 +20,7 @@
             Whether you're chasing tenths in a Time Attack or just trying to not get punted into T1 (we’ve all been there), sim racing gives you the thrill of real racing—without needing to remortgage your house.
         </p>
         <hr />
-                    <div class="p-5" style="background-image: url('Images/BackgroundImages/MaxSimracing-bg.jpg'); background-position:center ; background-repeat: no-repeat;">
+                    <div class="p-5" style="background-image: url('Images/BackgroundImages/MaxSimracing-bg.jpg'); background-size:cover ;background-position:center; background-repeat: no-repeat;">
                         <h2 class="mb-3 text-decoration-underline mt-5">What is SimSpeed?</h2>
             <h3 class="mb-3">SimSpeed is your go-to hub for everything sim racing.</h3>
             <p>We cover:</p>

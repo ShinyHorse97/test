@@ -11,9 +11,11 @@ namespace JonatanShlain_Final.Proj
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["username"] = null;
-            Session["password"] = null;
-            Response.Redirect("LoginPage.aspx");
+            Session["isLogin"] = null;
+            Session["userName"] = null;
+            Session["FullName"] = null;
+            Session["Password"] = null;
+            Response.Redirect("Welcome.aspx");
         }
     }
 }

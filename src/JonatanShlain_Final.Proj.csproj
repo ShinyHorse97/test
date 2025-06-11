@@ -73,16 +73,23 @@
     </Content>
     <Content Include="bootstrap.min.css" />
     <Content Include="Hardware_Info\Fanatec.aspx" />
+    <Content Include="Hardware_Info\Logitec.aspx" />
     <Content Include="Hardware_Info\Moza.aspx" />
+    <Content Include="Hardware_Info\NextLevelRacing.aspx" />
     <Content Include="Hardware_Info\Simagic.aspx" />
     <Content Include="Hardware_Info\Simcube.aspx" />
     <Content Include="Images\BackgroundImages\bmwfanatec-bg.jpg" />
     <Content Include="Images\BackgroundImages\Fanatec_bg.jpg" />
     <Content Include="Images\BackgroundImages\Fanatec_prod-bg.jpeg" />
     <Content Include="Images\BackgroundImages\Image_Welcome.png" />
+    <Content Include="Images\BackgroundImages\Logitec-bg.png" />
     <Content Include="Images\BackgroundImages\MaxSimracing-bg.jpg" />
     <Content Include="Images\BackgroundImages\Moza-prod-bg.jpg" />
     <Content Include="Images\BackgroundImages\moza-racing-bg.jpg" />
+    <Content Include="Images\BackgroundImages\NLR-bg.jpg" />
+    <Content Include="Images\BackgroundImages\NLR-prod-bj.jpg" />
+    <Content Include="Images\BackgroundImages\Simagic-bg.png" />
+    <Content Include="Images\BackgroundImages\Simagic-prod-bg.png" />
     <Content Include="Images\BackgroundImages\Simcube-bg.png" />
     <Content Include="Images\BackgroundImages\Simcube-prod-bg.jpg" />
     <Content Include="Images\Images.Captcha\Captcha_0.jpg" />
@@ -95,11 +102,19 @@
     <Content Include="Images\Images.Captcha\Captcha_7.jpg" />
     <Content Include="Images\Images.Captcha\Captcha_8.jpg" />
     <Content Include="Images\Images.Captcha\Captcha_9.jpg" />
+    <Content Include="Images\Simspeed_Logo.png" />
+    <Content Include="JimmyBroadbent.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="Main.aspx" />
+    <Content Include="Misha.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="Software_Info\AssettoCorsa.aspx" />
+    <Content Include="Software_Info\GT.aspx" />
+    <Content Include="Software_Info\Iracing.aspx" />
+    <Content Include="Software_Info\LMU.aspx" />
     <Content Include="StyleSheet1.css" />
+    <Content Include="SuperGT.aspx" />
     <Content Include="Web.config" />
     <Content Include="Welcome.aspx" />
   </ItemGroup>
@@ -111,12 +126,26 @@
     <Compile Include="Hardware_Info\Fanatec.aspx.designer.cs">
       <DependentUpon>Fanatec.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Hardware_Info\Logitec.aspx.cs">
+      <DependentUpon>Logitec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hardware_Info\Logitec.aspx.designer.cs">
+      <DependentUpon>Logitec.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Hardware_Info\Moza.aspx.cs">
       <DependentUpon>Moza.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Hardware_Info\Moza.aspx.designer.cs">
       <DependentUpon>Moza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hardware_Info\NextLevelRacing.aspx.cs">
+      <DependentUpon>NextLevelRacing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hardware_Info\NextLevelRacing.aspx.designer.cs">
+      <DependentUpon>NextLevelRacing.aspx</DependentUpon>
     </Compile>
     <Compile Include="Hardware_Info\Simagic.aspx.cs">
       <DependentUpon>Simagic.aspx</DependentUpon>
@@ -133,6 +162,13 @@
       <DependentUpon>Simcube.aspx</DependentUpon>
     </Compile>
     <Compile Include="Helper.cs" />
+    <Compile Include="JimmyBroadbent.aspx.cs">
+      <DependentUpon>JimmyBroadbent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JimmyBroadbent.aspx.designer.cs">
+      <DependentUpon>JimmyBroadbent.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -154,6 +190,13 @@
     <Compile Include="Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Misha.aspx.cs">
+      <DependentUpon>Misha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Misha.aspx.designer.cs">
+      <DependentUpon>Misha.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
@@ -168,6 +211,41 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Software_Info\AssettoCorsa.aspx.cs">
+      <DependentUpon>AssettoCorsa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Software_Info\AssettoCorsa.aspx.designer.cs">
+      <DependentUpon>AssettoCorsa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Software_Info\GT.aspx.cs">
+      <DependentUpon>GT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Software_Info\GT.aspx.designer.cs">
+      <DependentUpon>GT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Software_Info\Iracing.aspx.cs">
+      <DependentUpon>Iracing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Software_Info\Iracing.aspx.designer.cs">
+      <DependentUpon>Iracing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Software_Info\LMU.aspx.cs">
+      <DependentUpon>LMU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Software_Info\LMU.aspx.designer.cs">
+      <DependentUpon>LMU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperGT.aspx.cs">
+      <DependentUpon>SuperGT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperGT.aspx.designer.cs">
+      <DependentUpon>SuperGT.aspx</DependentUpon>
     </Compile>
     <Compile Include="Welcome.aspx.cs">
       <DependentUpon>Welcome.aspx</DependentUpon>

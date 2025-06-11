@@ -1,9 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Simagic.aspx.cs" Inherits="JonatanShlain_Final.Proj.Hardware_Info.Simagic" %>
-
+<asp:Content ID="TitleContent" ContentPlaceHolderID="TitleContent" runat="server">
+    Simagic - SimSpeed
+</asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="p-5">
+        <div class="p-5" style="background-color: white; background-image: url('/Images/BackgroundImages/Simagic-bg.png'); background-size: 15%; background-repeat: no-repeat; background-position: center;">
+        </div>
+        <hr />
         <h1 class="fw-bold">Simagic: High-End Performance with Cutting-Edge Value</h1>
         <p>Simagic is a fast-rising star in the sim racing world, offering professional-grade direct drive wheel bases, wireless steering wheels, and modular pedal systems—all at competitive price points. With a strong focus on innovation and build quality, Simagic brings race-ready realism to sim racers across the globe.</p>
         <br>
@@ -28,17 +33,16 @@
         </ul>
         <br>
         <hr>
-
-        <h2 class="text-decoration-underline">Wireless Racing Wheels</h2>
-        <p>Simagic wheels feature an advanced wireless system with seamless pairing and zero compromise on performance.</p>
-        <ul>
-            <li>Wireless power and signal transmission for clean setups</li>
-            <li>Premium materials like forged carbon, aluminum, and suede</li>
-            <li>Customizable layouts with rotary encoders, toggles, and RGB buttons</li>
-        </ul>
-        <br>
+        <div class="p-5" style="background-image: url('/Images/BackgroundImages/Simagic-prod-bg.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+            <h2 class="text-decoration-underline">Wireless Racing Wheels</h2>
+            <p>Simagic wheels feature an advanced wireless system with seamless pairing and zero compromise on performance.</p>
+            <ul>
+                <li>Wireless power and signal transmission for clean setups</li>
+                <li>Premium materials like forged carbon, aluminum, and suede</li>
+                <li>Customizable layouts with rotary encoders, toggles, and RGB buttons</li>
+            </ul>
+        </div>
         <hr>
-
         <h2 class="text-decoration-underline">Precision Pedals</h2>
         <p>Simagic pedal sets are designed for adjustability, strength, and precision—perfect for sim racers who demand real-world feedback.</p>
         <ul>

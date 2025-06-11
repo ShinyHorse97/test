@@ -16,7 +16,7 @@ namespace JonatanShlain_Final.Proj
             {
                 isLogin = Convert.ToBoolean(Session["isLogin"]);
             }
-            if (isLogin)
+            if (!isLogin)
             {
                 Response.Redirect("Login.aspx");
             }
